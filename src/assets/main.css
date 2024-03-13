@@ -1,8 +1,16 @@
 @import './css/nav.css';
 @import './css/banner.css';
+@import './css/recommender.css';
+
+:root {
+  --dark-blue: #042541;
+}
 
 body {
   font-family: 'circular';
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
 }
 
 a {
