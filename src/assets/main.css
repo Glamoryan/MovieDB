@@ -1,1 +1,13 @@
-@import './nav.css';
+@import './css/nav.css';
+@import './css/banner.css';
+
+body {
+  font-family: 'circular';
+}
+
+a {
+  display: block;
+  text-decoration: none;
+  color: unset;
+  height: 100%;
+}

@@ -2,10 +2,6 @@
   --dark-blue: #042541;
 }
 
-body {
-  font-family: 'circular';
-}
-
 .nav-bar {
   display: flex;
   flex-direction: row;
@@ -14,13 +10,6 @@ body {
   padding: 20px;
   background: var(--dark-blue);
   color: #fff;
-}
-
-.nav-bar a {
-  display: block;
-  text-decoration: none;
-  color: unset;
-  height: 100%;
 }
 
 .nav-bar .section-left,
