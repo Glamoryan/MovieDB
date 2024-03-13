@@ -1,0 +1,71 @@
+:root {
+  --dark-blue: #042541;
+}
+
+body {
+  font-family: 'circular';
+}
+
+.nav-bar {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  background: var(--dark-blue);
+  color: #fff;
+}
+
+.nav-bar a {
+  display: block;
+  text-decoration: none;
+  color: unset;
+  height: 100%;
+}
+
+.nav-bar .section-left,
+.nav-bar .section-right,
+.nav-bar .nav-link {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.nav-bar .section-right {
+  gap: 20px;
+}
+
+.nav-bar .section-right div {
+  cursor: pointer;
+}
+
+.nav-bar .section-right .search-icon {
+  display: block;
+  width: 32px;
+  height: 32px;
+  background: url('images/search.png');
+  background-repeat: no-repeat;
+  background-size: 32px;
+}
+
+.nav-bar .section-right .create-movie {
+  font-size: 32px;
+  font-weight: 700;
+}
+
+.nav-bar .section-right .language-selector {
+  border: 1px solid #fff;
+  padding: 5px;
+  border-radius: 5px;
+}
+
+.nav-bar .nav-link {
+  margin-left: 20px;
+  gap: 20px;
+}
+
+.nav-bar .nav-link .nav-link-item {
+  display: block;
+  width: max-content;
+  cursor: pointer;
+}
