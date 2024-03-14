@@ -5,9 +5,9 @@
         <span class="content-title">Welcome.</span>
         Millions of movies, TV shows and people to discover. Explore now.
       </div>
-      <div class="search">
-        <input type="text" name="" id="" />
-        <button>Search</button>
+      <div class="search flex">
+        <input class="rounded-md" type="text" name="" id="" />
+        <button class="rounded-3xl">Search</button>
       </div>
     </div>
   </div>

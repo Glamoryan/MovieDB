@@ -16,20 +16,20 @@ const fetchMovies = async (url: string) => {
   }
 }
 
-fetchMovies('http://localhost:3003/popularMovies')
+fetchMovies('http://localhost:3004/popularMovies')
 </script>
 
 <template>
-  <div class="recommender-wrapper">
-    <div class="header">
+  <div class="recommender-wrapper mt-4 ml-4">
+    <div class="header flex items-center">
       <div class="title">What's Popular</div>
-      <div class="selectors">
+      <div class="selectors flex">
         <div
           class="selector popular"
           :class="{ current: currentSelection === 'popular' }"
           @click="
             () => {
-              fetchMovies('http://localhost:3003/popularMovies')
+              fetchMovies('http://localhost:3004/popularMovies')
               currentSelection = 'popular'
             }
           "
@@ -41,7 +41,7 @@ fetchMovies('http://localhost:3003/popularMovies')
           :class="{ current: currentSelection === 'top-rated' }"
           @click="
             () => {
-              fetchMovies('http://localhost:3003/topRatedMovies')
+              fetchMovies('http://localhost:3004/topRatedMovies')
               currentSelection = 'top-rated'
             }
           "
@@ -50,7 +50,7 @@ fetchMovies('http://localhost:3003/popularMovies')
         </div>
       </div>
     </div>
-    <div class="content">
+    <div class="content flex">
       <CardItem v-for="movie in movies" :key="movie.id" :movie="movie" />
     </div>
   </div>

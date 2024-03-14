@@ -1,3 +1,7 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
 .banner-main {
   display: block;
   position: relative;
@@ -14,14 +18,12 @@
 }
 
 .banner-main .banner-content .search {
-  display: flex;
   gap: 5px;
 }
 
 .banner-main .banner-content .search input {
   border: none;
   outline: none;
-  border-radius: 5px;
   font-size: 22px;
   padding: 10px;
   flex: 1;
@@ -31,7 +33,6 @@
   border: none;
   outline: none;
   font-size: 18px;
-  border-radius: 20px;
   padding: 10px 30px;
   color: #fff;
   background: linear-gradient(to right, rgba(30, 213, 169, 1) 0%, rgba(1, 180, 228, 1) 100%);

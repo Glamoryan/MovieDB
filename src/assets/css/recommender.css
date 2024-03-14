@@ -1,13 +1,9 @@
-.recommender-wrapper {
-  margin-top: 10px;
-  padding-left: 20px;
-}
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
 
 .recommender-wrapper .header {
-  display: flex;
-  flex-direction: row;
   gap: 20px;
-  align-items: center;
 }
 
 .recommender-wrapper .header .title {
@@ -15,8 +11,6 @@
 }
 
 .recommender-wrapper .header .selectors {
-  display: flex;
-  flex-direction: row;
   gap: 15px;
   padding: 10px;
   border: 1px solid #000;
@@ -34,15 +28,12 @@
 }
 
 .recommender-wrapper .content {
-  display: flex;
-  flex-direction: row;
   width: fit-content;
   gap: 20px;
   user-select: none;
 }
 
 .recommender-wrapper .content .item-card {
-  margin-top: 20px;
   width: 170px;
   height: 250px;
 }
@@ -54,12 +45,13 @@
 .recommender-wrapper .content .item-card .image {
   width: 100%;
   height: 100%;
-  border-radius: 16px;
   -webkit-user-drag: none;
 }
 
 .recommender-wrapper .content .item-card .rating {
-  display: inline;
+  display: inline-block;
+  width: 42px;
+  height: 42px;
   position: relative;
   padding: 10px;
   color: #fff;
@@ -69,11 +61,13 @@
   z-index: 1;
   bottom: 20px;
   font-size: 14px;
+  line-height: 1;
 }
 
 .recommender-wrapper .content .item-card .title {
   font-size: 18px;
   font-weight: bold;
+  margin-top: -10px;
 }
 
 .recommender-wrapper .content .item-card .date {
