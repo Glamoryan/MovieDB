@@ -1,8 +1,16 @@
+<script setup lang="ts">
+import { defineProps } from 'vue'
+
+defineProps({
+  movie: Object
+})
+</script>
+
 <template>
   <div class="item-card">
-    <img class="image" src="../../assets/images/itemCard.jpg" alt="item-image" />
-    <div class="rating">85</div>
-    <div class="title">Terminator 2</div>
-    <div class="date">Jul 20, 2001</div>
+    <img class="image" :src="movie.imageUrl" alt="item-image" />
+    <div class="rating">{{ movie.rating }}</div>
+    <div class="title">{{ movie.title }}</div>
+    <div class="date">{{ movie.date }}</div>
   </div>
 </template>

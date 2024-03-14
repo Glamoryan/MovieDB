@@ -1,0 +1,62 @@
+{
+  "popularMovies": [
+    {
+      "imageUrl": "../src/assets/images/itemCard.jpg",
+      "rating": "56",
+      "title": "Terminator",
+      "date": "20 Jul, 2001",
+      "id": 1
+    },
+    {
+      "imageUrl": "../src/assets/images/itemCard.jpg",
+      "rating": "25",
+      "title": "TEST111",
+      "date": "2442",
+      "id": 2
+    },
+    {
+      "imageUrl": "../src/assets/images/itemCard.jpg",
+      "rating": "22",
+      "title": "5252",
+      "date": "20 Jul, 2001",
+      "id": 3
+    },
+    {
+      "imageUrl": "../src/assets/images/itemCard.jpg",
+      "rating": "11",
+      "title": "asfasf",
+      "date": "20asfasf",
+      "id": 4
+    },
+    {
+      "imageUrl": "../src/assets/images/itemCard.jpg",
+      "rating": "15",
+      "title": "Terminarfsfsator",
+      "date": "20 Jasfasf1",
+      "id": 5
+    }
+  ],
+  "topRatedMovies": [
+    {
+      "imageUrl": "../src/assets/images/itemCard.jpg",
+      "rating": "56",
+      "title": "Terminator",
+      "date": "20 Jul, 2001",
+      "id": 1
+    },
+    {
+      "imageUrl": "../src/assets/images/itemCard.jpg",
+      "rating": "25",
+      "title": "TEST111",
+      "date": "2442",
+      "id": 2
+    },
+    {
+      "imageUrl": "../src/assets/images/itemCard.jpg",
+      "rating": "22",
+      "title": "5252",
+      "date": "20 Jul, 2001",
+      "id": 3
+    }
+  ]
+}
