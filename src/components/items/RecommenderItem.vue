@@ -4,19 +4,21 @@ import CardItem from './CardItem.vue'
 
 const movies = ref([])
 const currentSelection = ref('popular')
+const popularEndpoint = 'https://api.themoviedb.org/3/discover/movie?api_key=348088421ad3fb3a9d6e56bb6a9a8f80&include_adult=false&include_video=false&language=en-US&page=1&sort_by=popularity.desc';
+const topRatedEndpoint = 'https://api.themoviedb.org/3/discover/movie?api_key=348088421ad3fb3a9d6e56bb6a9a8f80&include_adult=false&include_video=false&language=en-US&page=1&sort_by=vote_average.desc&without_genres=99,10755&vote_count.gte=200'
 
 const fetchMovies = async (url: string) => {
   try {
     const response = await fetch(url)
     const data = await response.json()
 
-    movies.value = data
+    movies.value = data.results
   } catch (error) {
     console.error('Fetch error:', error)
   }
 }
 
-fetchMovies('http://localhost:3004/popularMovies')
+fetchMovies(popularEndpoint)
 </script>
 
 <template>
@@ -29,7 +31,7 @@ fetchMovies('http://localhost:3004/popularMovies')
           :class="{ current: currentSelection === 'popular' }"
           @click="
             () => {
-              fetchMovies('http://localhost:3004/popularMovies')
+              fetchMovies(popularEndpoint)
               currentSelection = 'popular'
             }
           "
@@ -41,7 +43,7 @@ fetchMovies('http://localhost:3004/popularMovies')
           :class="{ current: currentSelection === 'top-rated' }"
           @click="
             () => {
-              fetchMovies('http://localhost:3004/topRatedMovies')
+              fetchMovies(topRatedEndpoint)
               currentSelection = 'top-rated'
             }
           "
