@@ -1,9 +1,9 @@
-<script setup lang="ts">
-import { defineProps } from 'vue'
-
-defineProps({
-  movie: Object
-})
+<script>
+export default {
+  props: {
+    movie: Object
+  }
+}
 </script>
 
 <template>

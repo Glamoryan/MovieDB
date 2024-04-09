@@ -14,15 +14,22 @@
 </template>
 
 <script setup lang="ts">
-debugger
-import { ref, getCurrentInstance } from 'vue'
+import { ref, defineEmits } from 'vue';
+import { debounce } from 'lodash';
+
+const emits = defineEmits(['update-search']);
 
 const searchTerm = ref('');
 
-const instance = getCurrentInstance();
-const emit = instance?.emit;
+const emitSearchTerm = debounce((term) =>{
+  emits('update-search', term);
+}, 500);
 
-const updateSearchTerm = () => {
-  emit('search', searchTerm.value);
-};
+const updateSearchTerm = (event) => {
+  searchTerm.value = event.target.value;
+
+  if (searchTerm.value.length >= 3) {
+    emitSearchTerm(searchTerm.value);
+  }
+}
 </script>
