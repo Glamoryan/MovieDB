@@ -76,7 +76,7 @@ watch(searchTerm, handleSearch);
       </div>
     </div>
     <div class="content flex">
-      <CardItem v-for="movie in filteredMovies" :key="movie.id" :movie="movie" />
+      <CardItem v-for="movie in movies" :key="movie.id" :movie="movie" />
     </div>
   </div>
 </template>
