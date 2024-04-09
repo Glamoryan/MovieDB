@@ -27,6 +27,7 @@
   font-size: 22px;
   padding: 10px;
   flex: 1;
+  color: #000;
 }
 
 .banner-main .banner-content .search button {
