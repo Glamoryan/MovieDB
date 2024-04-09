@@ -48,6 +48,14 @@
   -webkit-user-drag: none;
 }
 
+.recommender-wrapper .content .item-card .favorite-button {
+  position: relative;
+  top: -390px;
+  left: 140px;
+  font-size: 35px;
+  color: orange;
+}
+
 .recommender-wrapper .content .item-card .rating {
   display: inline-block;
   width: 42px;
@@ -68,6 +76,7 @@
   font-size: 18px;
   font-weight: bold;
   margin-top: -10px;
+  min-height: 60px;
 }
 
 .recommender-wrapper .content .item-card .date {
