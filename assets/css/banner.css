@@ -1,0 +1,48 @@
+.banner-main {
+  display: block;
+  position: relative;
+  background: url(/assets/images/banner.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: 350px;
+  color: #fff;
+}
+
+.banner-main .banner-content {
+  padding: 60px 40px;
+}
+
+.banner-main .banner-content .search {
+  gap: 5px;
+}
+
+.banner-main .banner-content .search input {
+  border: none;
+  outline: none;
+  font-size: 22px;
+  padding: 10px;
+  flex: 1;
+  color: #000;
+}
+
+.banner-main .banner-content .search button {
+  border: none;
+  outline: none;
+  font-size: 18px;
+  padding: 10px 30px;
+  color: #fff;
+  background: linear-gradient(to right, rgba(30, 213, 169, 1) 0%, rgba(1, 180, 228, 1) 100%);
+  cursor: pointer;
+}
+
+.banner-main .banner-content .title {
+  font-size: 22px;
+  margin-bottom: 40px;
+}
+
+.banner-main .content-title {
+  display: block;
+  font-size: 48px;
+  font-weight: bold;
+}

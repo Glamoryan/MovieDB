@@ -1,0 +1,21 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+    --dark-blue: #042541;
+  }
+  
+  body {
+    font-family: 'circular';
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+  }
+  
+  a {
+    display: block;
+    text-decoration: none;
+    color: unset;
+    height: 100%;
+  }
