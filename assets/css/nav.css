@@ -40,3 +40,16 @@
   width: max-content;
   cursor: pointer;
 }
+
+.under-link-container {
+  position: absolute;
+  width: 150px;
+  z-index: 5;
+  border: 1px solid #000;
+  border-radius: 6px;
+  cursor: default;
+}
+
+.under-link-container .under-link-item {
+  cursor: pointer;
+}
