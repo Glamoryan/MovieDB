@@ -1,9 +1,9 @@
 {
-  "_hash": "tr7bqyVOEK",
+  "_hash": "HL3iMVHuLn",
   "project": {
-    "rootDir": "/home/adnan/Desktop/MovieDb"
+    "rootDir": "C:/Users/ecsad/OneDrive/Masaüstü/Movie DB/MovieDB"
   },
   "versions": {
-    "nuxt": "3.11.2"
+    "nuxt": "3.12.2"
   }
 }
