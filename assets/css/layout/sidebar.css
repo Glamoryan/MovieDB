@@ -1,0 +1,29 @@
+.bar-wrapper .title {
+    white-space: nowrap;
+    font-size: 22px;
+}
+
+.bar-wrapper .sort-container,
+.bar-wrapper .filter-container {
+    border: 1px solid #000;
+    border-radius: 8px;
+}
+
+.bar-wrapper .sort-container select,
+.bar-wrapper .filter-container select {
+    background: #ccc;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+.content-wrapper {
+    flex: 3;
+}
+
+.content-wrapper .rating {
+    width: fit-content;
+}
+
+.content-wrapper .title {
+    width: 200px;
+}
