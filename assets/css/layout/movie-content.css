@@ -1,0 +1,53 @@
+.movie-wrapper {
+   background: #F5F7F8;
+   font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.movie-wrapper .content-wrapper {
+    align-items: center;
+}
+
+.movie-wrapper .information h1 {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.movie-wrapper .circular-progress {
+    position: relative;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid #000;
+    box-shadow: inset #042541 0px 0px 6px 2px;
+}
+
+.movie-wrapper .percentage-text {
+    position: absolute;
+    font-size: 14px;
+    color: #000;
+    font-weight: bold;
+}
+
+.movie-wrapper .rate-container p {
+    font-size: 20px;
+}
+
+.movie-wrapper .rate-container p span,
+.content-wrapper .other-information span {
+    color: green;
+    font-weight: bold;
+}
+
+.movie-wrapper .overview span {
+    display: block;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.movie-wrapper .other-information h3 {
+    font-size: 20px;
+    font-weight: bold;
+}
