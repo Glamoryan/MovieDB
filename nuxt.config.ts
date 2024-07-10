@@ -12,7 +12,8 @@ export default defineNuxtConfig({
     '~/assets/css/nav.css',
     '~/assets/css/banner.css',
     '~/assets/css/recommender.css',
-    '~/assets/css/layout/sidebar.css'
+    '~/assets/css/layout/sidebar.css',
+    '~/assets/css/layout/movie-content.css'
   ],
   modules: [
     '@pinia/nuxt'
