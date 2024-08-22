@@ -15,19 +15,20 @@
   
   <script setup lang="ts">
   import { ref, defineEmits } from 'vue';
-  import { debounce } from 'lodash';
-  
+  import lodash from 'lodash';
+  const { debounce } = lodash;
+
   const emits = defineEmits(['update-search']);
-  
+
   const searchTerm = ref('');
-  
+
   const emitSearchTerm = debounce((term) =>{
     emits('update-search', term);
   }, 500);
-  
+
   const updateSearchTerm = (event) => {
     searchTerm.value = event.target.value;
-  
+
     if (searchTerm.value.length >= 3) {
       emitSearchTerm(searchTerm.value);
     }
