@@ -1,7 +1,7 @@
 import { useSSRContext, defineComponent, ref, mergeProps, watch, computed, resolveComponent, withCtx, createTextVNode } from 'vue';
 import { ssrRenderAttrs, ssrRenderAttr, ssrRenderClass, ssrRenderList, ssrRenderComponent, ssrInterpolate } from 'vue/server-renderer';
 import { d as defineStore, _ as _export_sfc } from './server.mjs';
-import { debounce } from 'lodash';
+import debounce from 'lodash/debounce.js';
 import '../runtime.mjs';
 import 'node:http';
 import 'node:https';

@@ -1,0 +1,29 @@
+#!/usr/bin/env sh
+set -e
+
+buildtime=${BUILDTIME_ENV}
+
+echo "Build time is ${buildtime}"
+
+initialCommands() {
+    php artisan event:cache; \
+    php artisan config:cache; \
+    php artisan route:cache;
+}
+
+if [ "${buildtime}" = "development" ]; then
+    exec php-fpm
+elif [ "${buildtime}" = "eks" ]; then
+    cp /var/www/env-local /var/www/.env
+    cp /var/www/docker/nginx/eks.nginx.conf /etc/nginx/nginx.conf
+    mkdir -p /etc/nginx/conf.d
+    echo "upstream php-upstream { server localhost:9000; }" > /etc/nginx/conf.d/upstream.conf
+    php-fpm -D && nginx
+elif [ "${buildtime}" = "production" ]; then
+    initialCommands
+
+    exec /usr/bin/supervisord -c /etc/supervisor/conf.d/supervisord.conf
+else
+    echo "Build time mismatched."
+    exit 1
+fi

@@ -1,7 +1,7 @@
 {
-  "_hash": "mcLG38JDxb",
+  "_hash": "kmPcg2WmdF",
   "project": {
-    "rootDir": "/Users/adnan.ozdemir/Desktop/MovieDB"
+    "rootDir": "/app"
   },
   "versions": {
     "nuxt": "3.12.2"
