@@ -1,3 +1,6 @@
+# AWS
+http://13.48.5.221:3000/
+
 # For docker 
 
 `http://localhost:3002/`
